@@ -7,16 +7,16 @@ namespace DigitalisNyomozasNguyenVanTamas
 
 		static void EvidenceManager()
 		{
-			string choice = string.Empty;
 			bool valid = false;
 			Console.Write("Select a course of action (Create/Delete/Enumerate): ");
-			while (!valid)
+            string choice = Console.ReadLine();
+            while (!valid)
 			{
-				choice = Console.ReadLine();
-				if (choice != "Create" || choice != "Delete" || choice != "Enumerate")
+				if (choice != "Create" && choice != "Delete" && choice != "Enumerate")
 				{
 					Console.WriteLine("Incorrect course of action");
-				}
+                    choice = Console.ReadLine();
+                }
 				else
 				{
 					valid = true;
