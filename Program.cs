@@ -46,7 +46,7 @@ namespace DigitalisNyomozasNguyenVanTamas
 		}
 		static void Main(string[] args)
 		{
-
+			EvidenceManager();
 		}
 	}
 }
